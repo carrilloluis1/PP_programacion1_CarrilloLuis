@@ -13,7 +13,7 @@ for i in range(len(lista_ubicacion)):
     for j in range(len(lista_juguetes)):
         
         cantidad_juguetes = int(input(f'Cantidad de {lista_juguetes[j]} que hay en {lista_ubicacion[i]}: '))
-        if cantidad_juguetes < 0:
+        while cantidad_juguetes < 0:
             cantidad_juguetes = int(input("Cantidad de juguete Incorrecto!!! Reingrese la cantidad: "))
         cantidad += [cantidad_juguetes]
     
